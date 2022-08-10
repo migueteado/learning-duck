@@ -1,39 +1,3 @@
-<style>
-  table, th, td {
-    border: 1px solid black;
-    padding: 8px;
-    border-collapse: collapse;
-  }
-
-  .o-notation {
-    text-align: center;
-  }
-
-  .na {
-    background-color: #e3e3e3;
-  }
-
-  .horrible {
-    background-color: #ff8989;
-  }
-
-  .bad {
-    background-color: #FFC543;
-  }
-
-  .fair {
-    background-color: #ffff00;
-  }
-
-  .good {
-    background-color: #C8EA00
-  }
-
-  .excellent {
-    background-color: #53d000
-  }
-</style>
-
 # Big O
 
 Big O notation is a mathematical notation that describes the limiting behavior of a function when the arguments tends towards a particular value or infinity.
@@ -182,38 +146,7 @@ Exponential Time, seen in recursive algorithms that solve a problem of size n.
 
 Factorial Time, every input adds a nested loop. Probably never going to see it, it is the worst time.
 
-# Support
-
-## Complexity Chart
-
-<svg id="chart" width="800" height="500" xmlns="http://www.w3.org/2000/svg">
-  <!-- horrible region -->
-  <path d="M50 450 L 50 0 L 800 0 L 800 450 Z" fill="#ff8989"></path>
-  <!-- bad region -->
-  <path d="M50 450 L 800 0 L 800 450 Z" fill="#FFC543"></path>
-  <!-- fair region -->
-  <path d="M50 450 L 800 450 L 800 330 Z" fill="yellow"></path>
-  <!-- good region -->
-  <path d="M50 450 L 800 450 L 800 410 Z" fill="#C8EA00"></path>
-  <!-- excellent region -->
-  <path d="M50 450 L 800 450 L 800 440 Z" fill="#53d000"></path>
-  <!-- axes -->
-  <path d="M50 0 L 50 450 L 800 450" fill="transparent" stroke="black" stroke-width="2"></path>
-  <path d="M50 448 L 800 448" fill="transparent" stroke="black" stroke-width="2"></path>
-  <text x="700" y="438" fill="black">O(log n), O(1)</text>
-  <path d="M50 450 L 800 400" fill="transparent" stroke="black" stroke-width="2"></path>
-  <text x="760" y="390" fill="black">O(n)</text>
-  <path d="M50 450 Q 400 350, 800 150" fill="transparent" stroke="black" stroke-width="2"></path>
-  <text x="630" y="190" fill="black">O(n log n)</text>
-  <path d="M50 450 Q 180 380, 250 0" fill="transparent" stroke="black" stroke-width="2"></path>
-  <text x="260" y="30" fill="black">O(n^2)</text>
-  <path d="M50 450 C 100 430, 120 350, 120 0" fill="transparent" stroke="black" stroke-width="2"></path>
-  <text x="125" y="20" fill="black">O(2^n)</text>
-  <path d="M50 450 C 80 450, 80 350, 80 0" fill="transparent" stroke="black" stroke-width="2"></path>
-  <text x="80" y="20" fill="black">O(n!)</text>
-  <text x="0" y="0" transform="translate(30 230) rotate(-90)" style="dominant-baseline: middle; text-anchor: middle; font-size:20px; color: #555; font-size:20px; color: #555; font-style: italic;" fill="black">Operations</text>
-  <text x="0" y="0" transform="translate(420 470)" style="dominant-baseline: middle; text-anchor: middle; font-size:20px; color: #555; font-style: italic;" fill="black">Elements</text>
-</svg>
+# Additional Material
 
 ## Common Data Structure Operations
 
@@ -240,177 +173,177 @@ Factorial Time, every input adds a nested loop. Probably never going to see it, 
   </tr>
   <tr>
     <td>Array</td>
-    <td class="o-notation excellent">O(1)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation excellent">O(1)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
+    <td style="background-color: #53d000;">O(1)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #53d000;">O(1)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
   </tr>
   <tr>
     <td>Stack</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation excellent">O(1)</td>
-    <td class="o-notation excellent">O(1)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation excellent">O(1)</td>
-    <td class="o-notation excellent">O(1)</td>
-    <td class="o-notation fair">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #53d000;">O(1)</td>
+    <td style="background-color: #53d000;">O(1)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #53d000;">O(1)</td>
+    <td style="background-color: #53d000;">O(1)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
   </tr>
   <tr>
     <td>Queue</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation excellent">O(1)</td>
-    <td class="o-notation excellent">O(1)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation excellent">O(1)</td>
-    <td class="o-notation excellent">O(1)</td>
-    <td class="o-notation fair">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #53d000;">O(1)</td>
+    <td style="background-color: #53d000;">O(1)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #53d000;">O(1)</td>
+    <td style="background-color: #53d000;">O(1)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
   </tr>
   <tr>
     <td>Single Linked List</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation excellent">O(1)</td>
-    <td class="o-notation excellent">O(1)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation excellent">O(1)</td>
-    <td class="o-notation excellent">O(1)</td>
-    <td class="o-notation fair">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #53d000;">O(1)</td>
+    <td style="background-color: #53d000;">O(1)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #53d000;">O(1)</td>
+    <td style="background-color: #53d000;">O(1)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
   </tr>
   <tr>
     <td>Doubly Linked List</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation excellent">O(1)</td>
-    <td class="o-notation excellent">O(1)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation excellent">O(1)</td>
-    <td class="o-notation excellent">O(1)</td>
-    <td class="o-notation fair">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #53d000;">O(1)</td>
+    <td style="background-color: #53d000;">O(1)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #53d000;">O(1)</td>
+    <td style="background-color: #53d000;">O(1)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
   </tr>
   <tr>
     <td>Skip List</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation bad">O(n log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #FFC543;">O(n log(n))</td>
   </tr>
   <tr>
     <td>Hash Table</td>
-    <td class="o-notation na">N/A</td>
-    <td class="o-notation excellent">O(1)</td>
-    <td class="o-notation excellent">O(1)</td>
-    <td class="o-notation excellent">O(1)</td>
-    <td class="o-notation na">N/A</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
+    <td style="background-color: #e3e3e3;">N/A</td>
+    <td style="background-color: #53d000;">O(1)</td>
+    <td style="background-color: #53d000;">O(1)</td>
+    <td style="background-color: #53d000;">O(1)</td>
+    <td style="background-color: #e3e3e3;">N/A</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
   </tr>
   <tr>
     <td>Binary Search Tree</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
   </tr>
   <tr>
     <td>Cartesian Tree</td>
-    <td class="o-notation na">N/A</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation na">N/A</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
+    <td style="background-color: #e3e3e3;">N/A</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #e3e3e3;">N/A</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
   </tr>
   <tr>
     <td>B-Tree</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation fair">O(n)</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #ffff00;">O(n)</td>
   </tr>
   <tr>
     <td>Red-Black Tree</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation fair">O(n)</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #ffff00;">O(n)</td>
   </tr>
   <tr>
     <td>Splay Tree</td>
-    <td class="o-notation na">N/A</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation na">N/A</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation fair">O(n)</td>
+    <td style="background-color: #e3e3e3;">N/A</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #e3e3e3;">N/A</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #ffff00;">O(n)</td>
   </tr>
   <tr>
     <td>AVL Tree</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation fair">O(n)</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #ffff00;">O(n)</td>
   </tr>
   <tr>
     <td>KD Tree</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation good">O(log(n))</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation fair">O(n)</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
   </tr>
 </table>
 
 ## Common Array Sorting Algorithms
 
-<table>
+<table border="1">
   <tr>
     <td rowspan="2">Algorithm</td>
     <td colspan="3">Algorithm</td>
@@ -424,93 +357,93 @@ Factorial Time, every input adds a nested loop. Probably never going to see it, 
   </tr>
   <tr>
     <td>Quicksort</td>
-    <td class="o-notation bad">O(n log(n))</td>
-    <td class="o-notation bad">O(n log(n))</td>
-    <td class="o-notation horrible">O(n^2)</td>
-    <td class="o-notation good">O(log(n))</td>
+    <td style="background-color: #FFC543;">O(n log(n))</td>
+    <td style="background-color: #FFC543;">O(n log(n))</td>
+    <td style="background-color: #ff8989;">O(n^2)</td>
+    <td style="background-color: #C8EA00;">O(log(n))</td>
   </tr>
   <tr>
     <td>Mergesort</td>
-    <td class="o-notation bad">O(n log(n))</td>
-    <td class="o-notation bad">O(n log(n))</td>
-    <td class="o-notation bad">O(n log(n))</td>
-    <td class="o-notation fair">O(n)</td>
+    <td style="background-color: #FFC543;">O(n log(n))</td>
+    <td style="background-color: #FFC543;">O(n log(n))</td>
+    <td style="background-color: #FFC543;">O(n log(n))</td>
+    <td style="background-color: #ffff00;">O(n)</td>
   </tr>
   <tr>
     <td>Timsort</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation bad">O(n log(n))</td>
-    <td class="o-notation bad">O(n log(n))</td>
-    <td class="o-notation fair">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #FFC543;">O(n log(n))</td>
+    <td style="background-color: #FFC543;">O(n log(n))</td>
+    <td style="background-color: #ffff00;">O(n)</td>
   </tr>
   <tr>
     <td>Heapsort</td>
-    <td class="o-notation bad">O(n log(n))</td>
-    <td class="o-notation bad">O(n log(n))</td>
-    <td class="o-notation bad">O(n log(n))</td>
-    <td class="o-notation excellent">O(1)</td>
+    <td style="background-color: #FFC543;">O(n log(n))</td>
+    <td style="background-color: #FFC543;">O(n log(n))</td>
+    <td style="background-color: #FFC543;">O(n log(n))</td>
+    <td style="background-color: #53d000;">O(1)</td>
   </tr>
   <tr>
     <td>Bubble sort</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation horrible">O(n^2)</td>
-    <td class="o-notation horrible">O(n^2)</td>
-    <td class="o-notation excellent">O(1)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ff8989;">O(n^2)</td>
+    <td style="background-color: #ff8989;">O(n^2)</td>
+    <td style="background-color: #53d000;">O(1)</td>
   </tr>
   <tr>
     <td>Insertion sort</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation horrible">O(n^2)</td>
-    <td class="o-notation horrible">O(n^2)</td>
-    <td class="o-notation excellent">O(1)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #ff8989;">O(n^2)</td>
+    <td style="background-color: #ff8989;">O(n^2)</td>
+    <td style="background-color: #53d000;">O(1)</td>
   </tr>
   <tr>
     <td>Selection sort</td>
-    <td class="o-notation horrible">O(n^2)</td>
-    <td class="o-notation horrible">O(n^2)</td>
-    <td class="o-notation horrible">O(n^2)</td>
-    <td class="o-notation excellent">O(1)</td>
+    <td style="background-color: #ff8989;">O(n^2)</td>
+    <td style="background-color: #ff8989;">O(n^2)</td>
+    <td style="background-color: #ff8989;">O(n^2)</td>
+    <td style="background-color: #53d000;">O(1)</td>
   </tr>
   <tr>
     <td>Tree sort</td>
-    <td class="o-notation bad">O(n log(n))</td>
-    <td class="o-notation bad">O(n log(n))</td>
-    <td class="o-notation horrible">O(n^2)</td>
-    <td class="o-notation fair">O(n)</td>
+    <td style="background-color: #FFC543;">O(n log(n))</td>
+    <td style="background-color: #FFC543;">O(n log(n))</td>
+    <td style="background-color: #ff8989;">O(n^2)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
   </tr>
   <tr>
     <td>Shell sort</td>
-    <td class="o-notation bad">O(n log(n))</td>
-    <td class="o-notation horrible">O(n(log(n))^2)</td>
-    <td class="o-notation horrible">O(n(log(n))^2)</td>
-    <td class="o-notation excellent">O(1)</td>
+    <td style="background-color: #FFC543;">O(n log(n))</td>
+    <td style="background-color: #ff8989;">O(n(log(n))^2)</td>
+    <td style="background-color: #ff8989;">O(n(log(n))^2)</td>
+    <td style="background-color: #53d000;">O(1)</td>
   </tr>
   <tr>
     <td>Bucket sort</td>
-    <td class="o-notation excellent">O(n+k)</td>
-    <td class="o-notation excellent">O(n+k)</td>
-    <td class="o-notation horrible">O(n^2)</td>
-    <td class="o-notation fair">O(n)</td>
+    <td style="background-color: #53d000;">O(n+k)</td>
+    <td style="background-color: #53d000;">O(n+k)</td>
+    <td style="background-color: #ff8989;">O(n^2)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
   </tr>
   <tr>
     <td>Radix sort</td>
-    <td class="o-notation excellent">O(nk)</td>
-    <td class="o-notation excellent">O(nk)</td>
-    <td class="o-notation excellent">O(nk)</td>
-    <td class="o-notation fair">O(n+k)</td>
+    <td style="background-color: #53d000;">O(nk)</td>
+    <td style="background-color: #53d000;">O(nk)</td>
+    <td style="background-color: #53d000;">O(nk)</td>
+    <td style="background-color: #ffff00;">O(n+k)</td>
   </tr>
   <tr>
     <td>Counting sort</td>
-    <td class="o-notation excellent">O(n+k)</td>
-    <td class="o-notation excellent">O(n+k)</td>
-    <td class="o-notation excellent">O(n+k)</td>
-    <td class="o-notation fair">O(k)</td>
+    <td style="background-color: #53d000;">O(n+k)</td>
+    <td style="background-color: #53d000;">O(n+k)</td>
+    <td style="background-color: #53d000;">O(n+k)</td>
+    <td style="background-color: #ffff00;">O(k)</td>
   </tr>
   <tr>
     <td>Cubesort</td>
-    <td class="o-notation fair">O(n)</td>
-    <td class="o-notation bad">O(n log(n))</td>
-    <td class="o-notation bad">O(n log(n))</td>
-    <td class="o-notation fair">O(n)</td>
+    <td style="background-color: #ffff00;">O(n)</td>
+    <td style="background-color: #FFC543;">O(n log(n))</td>
+    <td style="background-color: #FFC543;">O(n log(n))</td>
+    <td style="background-color: #ffff00;">O(n)</td>
   </tr>
 </table>
