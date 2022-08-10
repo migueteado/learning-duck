@@ -4,8 +4,8 @@ Learning duck is a pseudoproject that I use to keep track of what I learn in an 
 
 # Fundamentals
 
-1. Big O
-2. [Data Structures](./data-structures/)
+1. [Big O](./fundamentals/big-o/)
+2. [Data Structures](./fundamentals/data-structures/)
 3. Algorithms
 
 # Programing Languages
