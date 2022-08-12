@@ -106,6 +106,32 @@ function printArrayThenAllPairs(array) {
 
 \*\* _To calculate space complexity we don’t care about the memory used for the input, just the extra memory used inside the code we are running._
 
+## Calculating Big O of a function
+
+```js
+// Yeah very long unuseful name, but it works for the example
+function printFirstItemThenFirstHalfThenSayHi100Times(items) {
+  console.log(items[0]); // Single operation: O(1)
+
+  var middleIndex = Math.floor(items.length / 2); // Single operation: O(1)
+  var index = 0; // Single operation: O(1)
+
+  // Loop operation: O(n)
+  while (index < middleIndex) {
+    console.log(items[index]);
+    index++;
+  }
+
+  // This look like a loop operation, but look closely
+  // here the input doesn't matter because the amount of operations
+  // remains the same always, just a loop of 100: O(1)
+  for (var i = 0; i < 100; i++) {
+    console.log("hi");
+  }
+}
+// O(1 + 1 + 1 + 1 + n) -> O(4 + n) -> O(n)
+```
+
 # Notations
 
 ## O(1) - Excellent
