@@ -10,8 +10,8 @@ Learning duck is a pseudoproject that I use to keep track of what I learn in an 
 
 # Programing Languages
 
-- Bash
-- C
+- [Bash](./languages/bash/)
+- [C](./languages/C/)
 - [TypeScript](./languages/typescript/)
 
 # Tools
