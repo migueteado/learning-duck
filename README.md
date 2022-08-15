@@ -12,3 +12,10 @@ Learning duck is a pseudoproject that I use to keep track of what I learn in an 
 
 - Bash
 - C
+- [TypeScript](./languages/typescript/)
+
+# Tools
+
+- EditorConfig
+- Git
+- Faker
