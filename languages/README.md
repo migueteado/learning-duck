@@ -3,7 +3,7 @@
 ### Contents
 
 - [Bash](./bash/)
-- [C](./C/)
+- [C](./c/)
 - [TypeScript](./typescript/)
 
 ### Language levels
